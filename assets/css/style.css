@@ -1,0 +1,594 @@
+/*initiasisation*/
+
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,600;1,700&display=swap");
+:root {
+  --fontFrancklin: "Libre Franklin", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+html {
+  height: 100%;
+}
+span{
+  font-family: "Libre Franklin";
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-items: center;
+}
+header {
+  width: 100%;
+}
+.justAround {
+  display: flex;
+  justify-content: space-around;
+}
+h1 {
+  font-family: var(--fontFrancklin);
+  font-weight: 600;
+  font-size: 16px;
+}
+h2 {
+  font-family: var(--fontFrancklin);
+  font-weight: 600;
+  font-size: 14px;
+}
+h3 {
+  font-weight: 600;
+  font-size: 14px;
+}
+/*classes de base*/
+.CDbold {
+  font-weight: bold;
+}
+.CDcolorWhite {
+  color: white;
+}
+.CDclearBlue {
+  background-color: #499ec0;
+}
+.CDcolorClearBlue {
+  color: #499ec0;
+}
+.CDpurple {
+  background-color: #998ac0;
+}
+.CDcolorPurple {
+  color: #998ac0;
+}
+.CDgold {
+  background-color: #f9be00;
+}
+.CDcolorGold {
+  color: #f9be00;
+}
+.CDgreen {
+  background-color: #899941;
+}
+.CDcolorGreen {
+  color: #899941;
+}
+.CDorange {
+  background-color: #f68b17;
+}
+.CDcolorOrange {
+  color: #f68b17;
+}
+.CDblue {
+  background-color: #338eb4;
+}
+.CDcolorBlue {
+  color: #338eb4;
+}
+.justAround {
+  display: flex;
+  justify-content: space-around;
+}
+.CDsectionWidth {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/*carroussel*/
+.CDsectionCarroussel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 4;
+}
+#CDchevRight {
+  width: 50%;
+  margin-top: 1px;
+  margin-left: 2px;
+}
+
+#CDchevLeft{
+  width:50%;
+  transform:rotate(180deg);
+  margin-top: 1px;
+  margin-right: 2px;
+}
+.CDcarousel__wrapper { 
+  max-width: 1050px;
+  position: relative;
+}
+
+.CDcarousel__scroll-area {
+  display: flex;
+  overflow-x: hidden;
+  max-width: 100%;
+  aspect-ratio: 15 / 9;
+  scroll-behavior:smooth;
+}
+figure {
+  position: relative;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+figcaption {
+  position: absolute;
+  left: 15%;
+  bottom: 26%;
+  padding: 0.5rem;
+  font-size: 44px;
+  font-weight:bold;
+  text-align: center;
+  width: 69%;
+}
+figure > img {
+  width: 100%;
+  height: 100%;
+}
+.CDcarousel__button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background: none;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.301);
+  border: transparent;
+  width: 60px;
+  height: 60px;
+  margin: auto 15px;
+  cursor: pointer;
+}
+.CDcarousel__button:hover {
+  background-color: rgba(233, 227, 227, 0.699);
+}
+.CDcarousel__button--left {
+  left: 0;
+  transform-origin: left;
+}
+.CDcarousel__button--right {
+  right: 0;
+  transform-origin: right;
+}
+.CDiconRoom {
+  width: 70px;
+  filter: invert(100);
+}
+/*section présentation*/
+.CDtextPresentationDeskstop{
+  text-align: left;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+}
+#CDtextPresentation {
+  margin-top: 70px;
+  text-align: center;
+}
+#CDtextPresentation > h2 {
+  margin-bottom: 40px;
+}
+#CDtextPresentation > p {
+  line-height: 25px;
+}
+/*section locaux*/ 
+.CDtextRoom{
+  margin: 0 0 10px 20px;
+}
+.CDtextRoom > p{
+  line-height:15px;
+}
+
+#CDsectionRoom > h2 {
+  margin: 100px auto 30px auto;
+}
+
+#CDsectionRoom > div > article {
+  height: 200px;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+#CDsectionRoom h3{
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#CDsectionRoom p {
+  width: 200px;
+}
+.CDcircleRoom {
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.CDrightPartRoom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width:188px;
+}
+.CDparafRoom{
+  display:none;
+}
+.CDparafSpan{
+  width:175px;
+}
+.CDcapacityNb {
+  display: flex;
+  margin: 5px;
+  vertical-align: middle;
+}
+.CDcapacityNb img {
+  width: 16px;
+  margin-right: 6px;
+}
+.CDcapacityNb span {
+  padding-right: 10px;
+}
+.CDcapacity {
+  font-size: 12px;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+.CDlinkRoom {
+  display: flex;
+  align-items: center;
+}
+.CDarrow {
+  width: 22px;
+}
+.CDarrowDesk {
+  display: none;
+}
+.CDarrowText {
+  color: #499ec0;
+  margin: 0 7px 3px;
+}
+
+/*section adherents*/
+.CDsectionAdh {
+  background-color: #82c2debe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.CDsectionAdh div {
+  display: flex;
+  justify-content: center;
+}
+.CDsectionAdh img {
+  width: 60%;
+  padding: 40px 40px 0 40px;
+}
+.CDadhBtn{
+  flex-direction: column
+}
+.CDtitleAdh{
+  margin-bottom:30px;
+}
+.CDlinkBtnDiscover {
+  margin: 30px 0;
+}
+.CDbtnDiscover {
+  height: 30px;
+  width: 175px;
+  background-color: transparent;
+  border: solid 2px #338eb4;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+.CDbtnSignIn {
+  height: 30px;
+  width: 175px;
+  background-color: #338eb4;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+.CDbtnSignIn:hover{
+  background-color:white;
+  color: #338EB4;
+  border: 2px solid #338EB4;
+}
+.CDbtnDiscover:hover{
+  background-color:white;
+  color: #338EB4;
+  border: 2px solid #338EB4;
+}
+/*section évènements*/
+.CDsectionEvent{
+  width:300px;
+  padding:60px 0;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+.CDplante{
+  margin-bottom:25px;
+}
+.CDeventCardDesktop {
+  display: none;
+  height: 215px;
+  width: 146px;
+  border-radius: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 10px;
+}
+.CDsectionEvent h2 {
+  margin-bottom: 50px;
+}
+.CDsectionEvent div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+#CDsectionEvent .CDeventCardMobile {
+  height: 215px;
+  width: 146px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 10px;
+}
+/*section contact*/
+.CDsectionContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 230px;
+  text-align: center;
+}
+/*section partenaires*/
+.CDsectionPartners {
+  background-color: #82c2debe;
+  text-align: center;
+  padding-top: 50px;
+}
+.CDsectionPartners div {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.CDsectionPartners img {
+  width: 93px;
+  margin: 15px;
+}
+/* points de ruptures*/
+@media screen and (max-width: 600px) {
+  .CDnavHeader {
+    height: 60px;
+  }
+  .CDlogo {
+    height: 50px;
+    width: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  figcaption{
+    font-size:  69px;
+  }
+  .CDtitlePresentationDeskstop{
+    display:block;
+  }
+  .CDtextPresentationDeskstop{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .CDtextPresentationDeskstop span{
+    margin-bottom:15px;
+  }
+  .CDtextPresentationDeskstop {
+    display: flex;
+  }
+  .CDtitlePresentationMobile {
+    display: none;
+  }
+  .CDtextPresentationMobile {
+    display: none;
+  }
+  .CDsectionWidth {
+    width: 700px;
+  }
+  #CDsectionRoom > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .CDparafRoom{
+    display:flex;
+  }
+  .CDparafSpan{
+    display:none;
+  }
+  .CDrightPartRoom{
+    width:220px;
+  }
+  #CDsectionRoom > div > article{
+    margin:9px;
+    width:320px;
+  }
+  .CDsectionEvent {
+    width: 700px;
+  }
+  .CDsectionEvent div {
+    justify-content: space-evenly;
+  }
+  .CDeventCardDesktop {
+    display: flex;
+    width: 200px;
+    height: 240px;
+  }
+  #CDsectionEvent .CDeventCardMobile {
+    width: 200px;
+    height: 240px;
+  }
+  .CDbtnDiscover{
+    height:60px;
+    width:290px;
+    border-radius:30px;
+    font-size: 24px;
+  }
+  .CDbtnSignIn{
+    height:60px;
+    width:290px;
+    border-radius:30px;
+    font-size: 24px;
+  }
+  .CDsectionContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+    justify-content: space-evenly;
+    height: 500px;
+    text-align: center;
+    line-height: 30px;
+  }
+  figcaption{
+    font-size:93px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .CDcarousel__scroll-area {
+    max-height: 630px;
+  }
+  main {
+    width: 100%;
+  }
+  .CDsectionWidth {
+    width: 1000px;
+  }
+  .CDsectionEvent {
+    width: 1000px;
+  }
+  #CDsectionRoom > div {
+    flex-wrap: nowrap;
+  }
+  .CDtextRoom {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .CDtextRoom h3{
+    padding:25px 0 0  0;
+  }
+  #CDsectionRoom > div > article {
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    width:180px;
+    justify-content: space-between;
+  }
+  #CDsectionRoom  p{
+    width:150px; 
+    height: 155px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .CDlinkRoom {
+    background-color: #499ec0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    border-radius: 15px;
+    padding: 3px;
+    margin: 15px auto;
+    cursor: pointer;
+  }
+  .CDlinkRoom:hover{
+    background-color:#E3E3E3;
+  }
+  .CDlinkRoom span{
+    color: white;
+  }
+  .CDarrowDesk {
+    display: block;
+  }
+  .CDarrowMobile {
+    display: none;
+  }
+  .CDrightPartRoom {
+    align-items: center;
+    height: 300px;
+    justify-content:space-between;
+  }
+  .CDadhBtn{
+    flex-direction: row;
+    margin-top: 60px;
+    width: 800px;
+    align-items:space-between;
+  }
+  .CDadhBtn > a{
+    margin: 0 40px;
+  }
+  .CDlinkBtnDiscover{
+    margin: 0;
+  }
+  figcaption{
+    font-size:141px;
+  }
+}

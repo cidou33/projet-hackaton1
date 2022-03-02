@@ -1,0 +1,302 @@
+@import url('reset.css');
+
+/* Style de police members handler Gestions des membres*/
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,600;1,700&display=swap');
+ 
+:root{
+    --fontFrancklin :'Libre Franklin', sans-serif;
+}
+ 
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+h1{
+    font-family: var(--fontFrancklin);
+    font-weight: 600;
+    font-size: 16px;
+}
+h2{
+    font-family: var(--fontFrancklin);
+    font-weight: 600;
+    font-size: 14px;
+}
+h3, button{
+    font-weight: 600;
+    font-size: 14px;
+}
+h4{
+    font-family: var(--fontFrancklin);
+    font-weight: 600;
+    font-size: 18px;
+}
+ 
+@media screen and (min-width: 800px){
+*{
+    font-size: 16px;
+}    
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 36px;
+}
+h3, button{
+    font-size: 24px;
+}
+}
+
+/*Css mise en page du codage page gestion des membres*/
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.allMembersHk{
+    margin: 0 20px;
+}
+body{
+    background-color: #499ec054;
+}
+.titleMembersHk{
+    color: white;
+    font-size: 40px;
+    margin: 10px;
+}
+.buttonHk{
+    background-color: #338db4ce;
+    border-radius: 50px;
+    border: none;
+    padding: 1em 2em;
+    margin: 30px auto;
+    color: white;
+    font-size: 20px;
+}
+.buttonHk:hover{
+    background-color: #338db494;
+}
+.smallBlocHK1{
+    margin: 20px;
+   
+}
+.smallBlocHK2{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.iconHk{
+    width: 20px;
+    margin: 10px;
+}
+.titleHk{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.firstBlocHk{
+    display: flex;
+    align-items: center;
+}
+.profilHk{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: center;
+}
+.displayNoneBisHk{
+    display: None;
+}
+.memberHk{
+    position: relative;
+}
+.displayHk{
+    display: block;
+}
+
+.cardHk{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 95%;
+}
+.cardBisHk{
+    text-align: center;
+}
+.logoMemberHk{
+    width: 100px;
+    margin: 10px auto;
+}
+.contactHk{
+    margin: 15px auto;
+}
+/* Pour ne pas faire afficher la div en mobile modalsTrashHk*/
+/*.modalsTrashHk{
+    display: flex;
+}*/
+/*Fontionnalité CSS et JS ppur afficher le modale de supression en Responsive Mobile*/
+
+.displayNoneButtonHk{
+    display: none;
+}
+.modalsTrashHk{
+    position: absolute;
+    width: 100%;
+    z-index: 200;
+    background-color: rgba(27, 27, 27, 0.74);
+    left: 0;
+    top: 0;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 8px;
+}
+.modalsTrashHk > p{
+    color: red;
+    font-weight : bold;
+    margin: 10px;
+}
+.allMembersHk{
+    position: relative;
+}
+.croixHk{
+    font-size: 28px;
+    color: red;
+    padding: 8px;
+}
+.mybtnHk {
+   font-size: 12px;
+   padding: 6px;
+   border-radius: 6px;
+   border: none;
+   color: black;
+   gap: 8px;
+}
+
+@media screen and (min-width: 800px){
+    .cardHk{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 500px;
+
+    } 
+    .smallBlocHK2{
+  
+        flex-direction: row !important;
+    }
+    .allMembersHk{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sideHk{
+        display: flex;
+    }
+    .displayNoneButtonHk{
+        display: none;
+    }
+  
+   
+    .allMembersHk{
+        position: relative;
+    }
+    .croixHk{
+        width: 30px;
+    }
+  
+}
+
+@media screen and (min-width: 1024px){
+    .allMembersHk{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .cardHk{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 500px;
+        margin: 0 30px;
+    } 
+    .smallBlocHK2{
+  
+        flex-direction: row !important;
+    }
+    .cardBisHk{
+        display: none;
+    }
+
+    /*Pour mon Modale de Suppression et Modification*/
+    
+    .displayNoneButtonHk{
+        display: none;
+    }
+ 
+    .allMembersHk{
+        position: relative;
+    }
+    .croixHk{
+        width: 30px;
+    }
+
+}
+
+    /*test javascript pour l'ouverture fermeture du modal bouton supression et modification
+
+    button {
+        margin: auto;
+        height: 100px;
+        width: 100px;
+        background: thistle;
+        border: 1px solid black;
+        font-family: 'Lato';
+        font-size: 24px;
+    }
+    
+
+    .myModalHk {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+    }
+    
+    
+    .modalContentHk {
+        background-color: #fefefe;
+        margin: 15% auto;
+        border: 1px solid #888;
+        width: 60%;
+        height: 300px;
+    }
+    
+    
+    .modalContentHk p {
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Lato';
+        
+    }
+    
+    
+    .close {
+        color: #aaa;
+        position: relative;
+        float: right;
+        cursor: pointer;
+        font-size: 50px;
+        padding: 0 10px 0 0;
+        font-weight: bold;
+    }
+}*/

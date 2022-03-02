@@ -1,0 +1,354 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+:root {
+  background-color: white;
+}
+
+/* ------------- FONTS --------------------- */
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+h1 {
+  font-family: "Libre Franklin";
+  font-weight: 600;
+  font-size: 16px;
+  margin: 5px 0;
+  color: black;
+}
+h2 {
+  font-family: "Libre Franklin";
+  font-weight: 600;
+  font-size: 14px;
+  margin: 5px 0;
+  color: black;
+}
+h3,
+button,
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 10px 0;
+  color: black;
+}
+
+/* ------------ FIN FONTS ------------------ */
+
+.flexCardJg {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------ CAROUSEL ------------------ */
+.instaJg {
+  text-align: center;
+  margin: 20px 0;
+}
+.flexCarouselJg {
+  display: flex;
+  justify-content: center;
+}
+.carouselWrapperJg {
+  max-width: min(100%, 853px);
+  position: relative;
+}
+.carouselScrollAreaJg {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+figure {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 10px;
+}
+.carouselButtonJg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background: none;
+  border: none;
+  padding: 2rem 1rem;
+  color: white;
+}
+.carouselButtonLeftJg {
+  left: 0;
+}
+.carouselButtonRightJg {
+  right: 0;
+}
+/* ----------- FIN CAROUSEL ---------------*/
+
+.flexAgendaJg {
+  background-image: url("../img/planteEvent.svg");
+  background-position: 65%;
+  background-repeat: no-repeat;
+}
+
+.greenJg,
+.orangeJg,
+.blueJg,
+.yellowJg {
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background: green;
+  margin: 5px 15px;
+}
+.orangeJg {
+  background: orange;
+}
+.blueJg {
+  background: blue;
+}
+.yellowJg {
+  background: yellow;
+}
+.titreJg {
+  text-align: center;
+  margin: 30px;
+}
+
+/* ----------- Smartphones -------------- */
+@media only screen and (min-device-width: 320px) {
+  .flexAgendaJg {
+    background-repeat: no-repeat;
+    background-position: 38%;
+    background-size: 60vh;
+  }
+
+  .agendaJg {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+  }
+  .agendaPointJg {
+    display: flex;
+    flex-direction: column;
+  }
+  .agendaTextJg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .monthEventJg h2 {
+    color: #899941;
+    text-align: center;
+    padding: 10px;
+  }
+  .containerCardJg {
+    display: flex;
+    justify-content: center;
+  }
+  .containerCardRightJg {
+    margin-top: 120px;
+  }
+  .cardEvenementJg {
+    word-wrap: break-word;
+    max-width: 100%;
+    background: #899941;
+    border-radius: 15px;
+    padding: 15px;
+    width: 130px;
+    height: 265;
+    margin: 15px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .agendaJg2 {
+    display: none;
+  }
+
+  h2 {
+    font-family: "Libre Franklin";
+    font-weight: 600;
+    font-size: 14px;
+    margin: 5px 0;
+    color: white;
+  }
+  h3,
+  button,
+  p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 10px 0;
+    color: white;
+  }
+  .agendaTextJg h2 {
+    color: black;
+  }
+}
+/* ------------- Smartphones --------------- */
+
+/* --------------- Tablet ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 18px;
+    color: white;
+  }
+  h3,
+  button,
+  p {
+    font-size: 16px;
+    color: white;
+  }
+  svg {
+    font-size: 50px;
+  }
+  .agendaPointJg2 h2 {
+    color: black;
+  }
+  .flexAgendaJg {
+    background-image: url("../img/planteEvent.svg");
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: 108vh;
+  }
+
+  .monthEventJg {
+    text-align: center;
+    padding: 10px;
+  }
+  .containerCardJg {
+    display: flex;
+    justify-content: center;
+  }
+  .containerCardRightJg {
+    margin-top: 120px;
+  }
+  .cardEvenementJg {
+    word-wrap: break-word;
+    max-width: 100%;
+    background: #899941;
+    border-radius: 15px;
+    padding: 15px;
+    width: 300px;
+    height: 370px;
+    margin: 30px 40px;
+    margin-bottom: 150px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .cardEvenementLastJg {
+    word-wrap: break-word;
+    max-width: 100%;
+    background: #899941;
+    border-radius: 15px;
+    padding: 15px;
+    width: 300px;
+    height: 370px;
+    margin: 15px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .agendaJg2 {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+  }
+  .agendaPointJg2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .agendaJg {
+    display: none;
+  }
+}
+/* ------------- Tablet -----------*/
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 24px;
+    color: white;
+  }
+  h3,
+  button,
+  p {
+    font-size: 18px;
+    color: white;
+  }
+  svg {
+    font-size: 50px;
+  }
+  .agendaPointJg2 h2 {
+    color: black;
+  }
+  .flexAgendaJg {
+    background-image: url(../img/planteEvent.svg);
+    background-position: 54%;
+    background-repeat: no-repeat;
+    background-size: 88vh;
+  }
+
+  .monthEventJg {
+    text-align: center;
+    padding: 10px;
+  }
+  .containerCardJg {
+    display: flex;
+    justify-content: center;
+  }
+  .containerCardRightJg {
+    margin-top: 120px;
+  }
+  .cardEvenementJg {
+    word-wrap: break-word;
+    max-width: 100%;
+    background: #899941;
+    border-radius: 15px;
+    padding: 15px;
+    width: 350px;
+    height: 300px;
+    margin: 80px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .cardEvenementLastJg {
+    word-wrap: break-word;
+    max-width: 100%;
+    background: #899941;
+    border-radius: 15px;
+    padding: 15px;
+    width: 350px;
+    height: 300px;
+    margin: 80px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .agendaJg2 {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+  }
+  .agendaPointJg2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .agendaJg {
+    display: none;
+  }
+}

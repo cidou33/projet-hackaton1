@@ -1,0 +1,26 @@
+.connexionTm {
+	background: rgb(73, 158, 192, 0.25);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.connexionTm h1 {
+	font-size: 32px;
+	color: white;
+	margin: 15%;
+}
+.forTm input {
+	font-size: 16px;
+}
+.coTm {
+	display: flex;
+	border-radius: 50px;
+	margin: 10% 0%;
+	padding: 1% 5%;
+}
+.co1Tm {
+	border-radius: 50px;
+	color: white;
+	background:rgb(73, 158, 192) ;
+	margin-bottom: 130%;
+}

@@ -1,0 +1,217 @@
+@import url('reset.css');
+
+/* Style de police members handler Gestions des membres*/
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,600;1,700&display=swap');
+ 
+:root{
+    --fontFrancklin :'Libre Franklin', sans-serif;
+}
+ 
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+.posiRela{
+    position: relative;
+}
+h1{
+    font-family: var(--fontFrancklin);
+    font-weight: 600;
+    font-size: 16px;
+}
+h2{
+    font-family: var(--fontFrancklin);
+    font-weight: 600;
+    font-size: 14px;
+}
+h3, button{
+    font-weight: 600;
+    font-size: 14px;
+}
+h4{
+    font-family: var(--fontFrancklin);
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 20px;
+}
+ 
+@media screen and (min-width: 800px){
+*{
+    font-size: 16px;
+}    
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 36px;
+}
+h3, button{
+    font-size: 24px;
+    }
+}
+
+/* Style Css pour la page scroller et responsive des profils Membres*/
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.allMembersHk1{
+    margin: 0 auto;
+    position: relative;
+}
+.memberHk1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.TitleHk1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.profilDivHk1{
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profilHk1{
+    width: 100%;
+    overflow: hidden;
+}
+.displayNoneHk{
+    display: None !important;
+}
+.displayHk{
+    display: block;
+}
+.cardHk1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardHk2{
+    text-align: center;
+    height: max-content;
+}
+.logoMemberHk1{
+    width: 110px;
+    margin: 0 auto;
+    display: none;
+}
+.cardHk1:hover{
+        background-color: #338db438;
+}
+.logoEnterpriseHk1{
+    width: 50px;
+}
+.sideHk1{
+    display: flex;
+    align-items: center;
+}
+.contactHk1{
+    margin: 15px auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.iconeRsHk1{
+    width: 15px;
+}
+@media screen and (min-width: 800px){
+    .scrollerHk{
+        width: 3500px;
+        padding-top: 250px;
+        display: flex;
+        position: relative;
+    }
+
+    .allMembersHk1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .iconeRsHk1{
+        width: 15px;
+    }
+    .responsive1Hk{
+        position: fixed;
+        top: 27vh;
+        left: 15vw;
+        background-color: rgba(255, 255, 255, 0.473);
+        z-index: 200;
+        width: 75vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-items: center;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .logoEnterpriseHk1 {
+        position: relative;
+        top: -60px;
+        right: 30px;
+    }
+    .allMembersHk1{
+        width: 1200px;
+        overflow: hidden;
+        display: block;
+        overflow-x: scroll;
+    }
+    .scrollerHk{
+        width: 3500px;
+       position: relative;
+        display: flex;
+        
+    }
+    /* test de modification de style de la scroll bar
+
+    body::-webkit-scrollbar {
+        width: 12px;
+      }
+     
+    body::-webkit-scrollbar-track {
+        background: orange;
+      }
+      
+    body::-webkit-scrollbar-thumb {
+        background-color: blue;
+        border-radius: 20px;
+        border: 3px solid orange;
+      }
+    */
+    
+    body{
+        position: relative;
+        overflow:hidden;
+        
+    }
+   
+    .memberHk1{
+        margin: 0 5px;
+       
+    }
+    .sideHk1{
+        display: flex;
+        align-items: center;
+    }
+    .displayNoneHk2{
+        display: none;
+    }
+    .iconeRsHk1{
+        width: 15px;
+    }
+    .logoMemberHk1{
+        display: block;
+
+    }
+    div > p {
+        text-align: center;
+    }
+}
+
+

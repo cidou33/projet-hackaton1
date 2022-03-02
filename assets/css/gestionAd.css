@@ -1,0 +1,101 @@
+.adheTm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: rgb(73, 158, 192, 0.25);
+	
+}
+.adheTm h1 {
+	margin: 10%;
+	font-size: 32px;
+	color: white;
+	text-transform: uppercase;
+}
+.adheTm h2 {
+	font-size: 16px;
+}
+.adheTm input {
+	font-size: 14px;
+}
+
+.formuTm {
+	padding: 5% 0;
+	margin: 0 0 5% 0;
+}
+.formuTm input {
+	margin: 10% 0;
+}
+.formu6Tm {
+	display: flex;
+	justify-content: center;
+	margin: 15% 0%;
+}
+.inTm {
+	display: flex;
+	text-align: center;
+	border-radius: 50px;
+	width: 275px;
+	height: 25px;
+}
+.in1Tm {
+	display: flex;
+	border-radius: 50px;
+	margin: 0% 5%;
+	background: #499EC0;
+	color: white;
+}
+.in2Tm {
+	display: flex;
+	border-radius: 50px;
+	margin: 0% 5%;
+	color: #499EC0;
+	z-index: -100;
+}
+.modTm {
+	display: flex;
+	justify-content: center;
+}
+.in3Tm {
+	display: flex;
+	border-color: red;
+	border-radius: 50px;
+	margin: 0% 5%;
+	color: red;
+	z-index: -100;
+} 
+@media screen and (min-width: 768px) {
+	.adheTm h1 {
+		margin: 5%;
+		font-size: 36px;
+	}
+	.adheTm h2 {
+		font-size: 24px;
+	}
+}
+@media screen and (min-width: 992px) {
+	.adheTm h1 {
+		font-size: 40px;
+	}
+	.adheTm h2 {
+		font-size: 30px;
+	}
+	.modTm input {
+		width: 100px;
+	}
+	.formuTm input {
+		width: 400px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.adheTm h1 {
+		font-size: 48px;
+	}
+	.adheTm h2 {
+		font-size: 36px;
+	}
+
+	.formuTm input {
+		width: 700px;
+		margin: 3%;
+	}
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/gestionAd.css">
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/header_footer.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo.png">
+	<title>Gestion Adhésion</title>
+</head>
+<body>
+	<header>
+		<nav class="CDnavHeader">
+		  <img class="CDlogo" src="assets/img/logo.png" alt="logo de mongolfière, association l'escale" />
+		  <div id="CDburgerCross" class="CDburgerCross">
+			<div id="CDstickTop" class="CDstickTop CDstick"></div>
+			<div id="CDstickMid" class="CDstickMid CDstick"></div>
+			<div id="CDstickBot" class="CDstickBot CDstick"></div>
+		  </div>
+		  <ul id="CDulHeader" class="CDulHeader CDulHidden">
+			<li>
+			  <a href="index.html">ACCUEIL</a>
+			</li>
+			<li>
+			  <a href="info.html">NOS LOCAUX</a>
+			</li>
+			<li>
+			  <a href="members.html">ADHERENTS</a>
+			</li>
+			<li  id="CDlinkMembers" class="CDnone">
+			  <a href="members.html">NOS MEMBRES</a>
+			</li>
+			<li  id="CDlinkBecome" class="CDnone">
+			  <a href="adhesion.html">DEVENIR ADHERENT</a>
+			</li>
+			<li>
+			  <a href="agenda.html">EVENEMENTS</a>
+			</li>
+			<li>
+			  <a href="contact.html">CONTACTS</a>
+			</li>
+			<li class="CDlistRS">
+			  <a href="https://www.linkedin.com/company/l-escale-tiers-lieu"
+				><img class="CDiconRS" src="assets/img/linkedin.png" alt="logo linkedin bleu"
+			  /></a>
+			  <a href="https://www.instagram.com/escale.tierslieu/"
+				><img class="CDiconRS" src="assets/img/instagram.png" alt="logo instagram bleu"
+			  /></a>
+			  <a href="https://www.facebook.com/escale.tierslieu/"
+				><img class="CDiconRS" src="assets/img/facebook.png" alt="logo facebook bleu"
+			  /></a>
+			</li>
+		  </ul>
+		  <a href="admin.html">
+			<img class="CDiconUser" src="assets/img/user.png" alt="avatar de la personne connectée" />
+		  </a>
+		</nav>
+	  </header>
+	<section class="adheTm">
+		<h1>Bonjour, User</h1>
+		<h2>Vos informations</h2>
+		<form action="/mes-actions">
+			<div class="formuTm">
+				<input type="text" placeholder="Doe" class="inTm" >
+				<input type="text" placeholder="John" class="inTm">
+				<input type="text" placeholder="john.doe@pasdinspi.fr" class="inTm">
+				<input type="text" placeholder="0213456585" class="inTm" id="phoneTm">
+				<span class="resultTm"> </span>
+			    <input type="password" placeholder="Mot de passe : *******" id="passwordTm" class="inTm">
+				<input type="text" placeholder="Does Factory" id="inTm" class="inTm">
+			</div>
+			<div class="modTm">
+				<input type=button onclick=window.location.href='gestionAd.html'; value="Modifier"class="in1Tm" />
+				<input type=button onclick=window.location.href='index.html'; value=Déconnecter class="in2Tm" />
+			</div>
+			<div class="formu6Tm">
+				<input type=button onclick=window.location.href='index.html'; value="Supprimer le compte" class="in3Tm" />
+			</div>
+		</form>
+	</section>
+	<footer>
+		<nav>
+		  <div class="CDleftFooter">
+			<div class="CDlogoText">
+			  <a class="CDfooterLink" href="#">
+				<img
+				  class="CDlogo CDlogoBottom"
+				  src="assets/img/logo.png"
+				  alt="logo de l'association l'escale"
+				/>
+			  </a>
+			  <div class="CDspanFooter">
+				<span>L’Escale Tiers-Lieu</span>
+				<span>Association loi 1901</span>
+				<span>1 Avenue pasteur 33480 Castelnau de médoc / France</span>
+				<span>+33 (0)5 57 09 11 40</span>
+			  </div>
+			</div>
+			<a class="CDfooterLinkRS" href="https://www.linkedin.com/company/l-escale-tiers-lieu">
+			  <img class="CDiconRS" src="assets/img/linkedin.png" alt="icone bleu linkedin" />
+			</a>
+			<a class="CDfooterLinkRS" href="https://www.instagram.com/escale.tierslieu/">
+			  <img class="CDiconRS" src="assets/img/instagram.png" alt="icone bleu instagram" />
+			</a>
+			<a class="CDfooterLinkRS" href="https://www.facebook.com/escale.tierslieu/">
+			  <img class="CDiconRS" src="assets/img/facebook.png" alt="icone bleu facebook" />
+			</a>
+		  </div>
+		  <div class="CDfooterCGU">
+			<div>
+			  <a href="connexion.html">Contactez nous</a>
+			</div>
+			<div>
+			  <a href="https://www.locomotiv.com/politique-de-confidentialite/">C.G.U</a>
+			</div>
+			<div>
+			  <a href="https://www.locomotiv.com/mentions-legales/">Mentions Légales</a>
+			</div>
+		  </div>
+		</nav>
+	  </footer>
+	<script src="assets/js/CDburger.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
